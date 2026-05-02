@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  signal-bot:
+    build: .
+    container_name: early-signal
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./data:/app/code/data
+    command: python run.py
