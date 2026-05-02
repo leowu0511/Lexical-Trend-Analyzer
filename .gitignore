@@ -1,0 +1,26 @@
+# ===== 敏感檔案（API 金鑰 — 絕對不可上傳）=====
+.env
+
+# ===== Python 虛擬環境 =====
+.venv/
+.venv_py313/
+__pycache__/
+*.pyc
+*.pyo
+
+# ===== 資料庫（本地收集的資料）=====
+code/data/
+data/
+*.db
+
+# ===== IDE / 編輯器 =====
+.vscode/
+.idea/
+
+# ===== Docker（可選）=====
+# docker-compose.yml 和 Dockerfile 可以上傳（不含金鑰），但若有 override 檔則排除
+docker-compose.override.yml
+
+# ===== OS 雜項 =====
+.DS_Store
+Thumbs.db
